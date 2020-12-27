@@ -1,0 +1,33 @@
+// CheatSheet
+// exact match
+abc      // matches "abc"
+ 
+// all character match
+.       // matches "a", "b", "x", "?", " "
+ 
+// letter match (A-Za-z0-9_)
+\w      // matches "a", "b", "x"
+ 
+// multiple letter match
+\w\w\w  // matches 3 letter
+\w+     // matches all possible consecutive letters
+\w{3}   // matches exact 3 consecutive letters
+\w{2,3} // 2 to 3
+\w*     // 0 or more
+ 
+[abc]   // match in abc
+r[ua]n  // "run" or "ran"
+ 
+// digits
+\d      // single digit
+\d\d    // 2 digit
+\d+     // as many as possible
+\d{4}   // just 4 digits
+\d{3,4} // 3 to 4 digit
+\d*     // 0 or more
+ 
+// whitespaces
+\t      // matches tab
+ 
+// groups
+(\d\w\d) // matches 1a1, 2e3 etc
