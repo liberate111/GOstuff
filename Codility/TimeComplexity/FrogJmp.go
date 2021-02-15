@@ -26,24 +26,6 @@
 
 package solution
 
-// 55 % performance of time fail
-// func Solution(X int, Y int, D int) int {
-//     // write your code in Go 1.4
-//     b := true
-//     jump := 0
-
-//     for b {
-//         if X >= Y {
-//             b = false
-//             return jump
-//         } else {
-//             X = X + D
-//             jump++
-//         }
-//     }
-//     return jump
-// }
-
 // 100 %
 func Solution(X int, Y int, D int) int {
 	jump := (Y - X) / D

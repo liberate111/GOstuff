@@ -40,51 +40,6 @@
 //         N is an integer within the range [2..100,000];
 //         each element of array A is an integer within the range [−1,000..1,000].
 
-// 69 %
-// func Solution(A []int) int {
-
-// 	min, tmp := 0, 0
-// 	P := len(A) - 1
-// 	sum1, sum2 := 0, 0
-
-// 	if len(A) == 2 {
-// 		if A[0] > A[1] {
-// 			return A[0] - A[1]
-// 		} else if A[1] > A[0] {
-// 			return A[1] - A[0]
-// 		} else {
-// 			return 0
-// 		}
-// 	}
-
-// 	for i := 1; i <= P; i++ {
-// 		for j := 0; j < i; j++ {
-// 			sum1 += A[j]
-// 		}
-// 		for k := len(A); k > i; k-- {
-// 			sum2 += A[k-1]
-// 		}
-
-// 		if sum1 > sum2 {
-// 			tmp = sum1 - sum2
-// 			if tmp < min || i == 1 {
-// 				min = tmp
-// 			}
-// 		} else if sum2 > sum1 {
-// 			tmp = sum2 - sum1
-// 			if tmp < min || i == 1 {
-// 				min = tmp
-// 			}
-// 		} else {
-// 			return 0
-// 		}
-// 		tmp = 0
-// 		sum1 = 0
-// 		sum2 = 0
-// 	}
-// 	return min
-// }
-
 // 100 %
 package solution
 
