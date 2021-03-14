@@ -3,4 +3,7 @@ test/
 testNdigital/
 testFreshket/
 testCJ/
+.vscode/
+
+
 .exe
